@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="shortcut icon" href="/assets/css/icon/img_icon/user2.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: white;
+        width: 350px;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0px 0px 2px 0px #ccc;
+    }
+
+    header label {
+        color: rgb(68, 66, 66);
+        display: block;
+    }
+
+    header label:nth-child(1) {
+        font-size: 2px;
+        color: #ccc;
+    }
+    header .container-img{
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-img .img{
+        width: 100%;
+        height: 250px;
+        border-radius: 50px;
+        line-height: 250px;
+        text-align: center;
+        border: 1px solid #ccc;
+    }
+    label:nth-child(3) {
+        font-size: 35px;
+        color: rgb(67, 66, 66);
+        font-weight: bold;
+    }
+
+    nav {
+        background-color: white;
+        max-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 0px 1px #ccc;
+        position: sticky;
+        top: 0;
+    }
+
+    nav ul {
+        display: flex;
+        height: 60px;
+        line-height: 60px;
+        width: 100%;
+        gap: 10px;
+    }
+
+    nav ul li {
+        list-style: none;
+        flex: 1;
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        color: black;
+        text-transform: uppercase;
+    }
+
+    nav ul li a:hover {
+        color: white;
+        background-color: #ccc;
+    }
+
+    header .description {
+        color: #797777;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        text-align: left;
+        padding: 0 10px;
+        max-height: 300px;
+        overflow: hidden;
+    }
+
+
+    .container-index {
+        width: 100%;
+        height: 100vh;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .container-index .container-index-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        /*backdrop-filter: blur(10px);*/
+    }
+
+    .container-index-body label {
+        list-style: none;
+        display: block;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .container-index-body label {
+        font-size: 100px;
+        margin: 10px 0;
+    }
+
+    .container-index-body section:nth-child(1) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .container-index-body section:nth-child(2) {
+        padding: 0 25px;
+    }
+
+    .container-index-body article {
+        width: auto;
+        color: rgb(82, 81, 81);
+        display: flex;
+        flex-direction: column;
+    }
+
+    article div {
+        padding: 5px 0 !important;
+        font-size: 25px;
+        display: block;
+        gap: 10px;
+    }
+
+    article div u {
+        text-decoration: underline yellow;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .checked {
+        background-color: rgb(231, 229, 229);
+        border-left: 1px solid yellow;
+    }
+
+    a {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .flex-center {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <section class="flex">
+        <header class="flex-center">
+            <div class="container-img">
+                <div class="img">
+                    Image de Bouba 
+                </div>
+            </div>
+            <label for="h1">Gilbert bouba</label>
+            <label for="h2">Web Developer</label>
+
+
+
+        </header>
+        <div class="container-index flex-2 relative">
+            <nav>
+                <ul class="">
+                    <li><a href="#" class="checked">Home</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="container-index-body absolute">
+                <!-- les infos sur moi-->
+                <section class="police">
+                    <label for="title-user-h1 police">Gilbert bouba</label>
+                    <article>
+                        <div><u>Identifier:</u> <span>21A292FS</span></div>
+                        <div><u>Born in:</u> <span>2000</span></div>
+                        <div><u>To:</u> <span>Titing Moutourwa</span></div>
+                        <div><u>Address</u> <span>Dang, Ngaoundere, Cameroun</span></div>
+                        <div><u>E-mail</u> <span>gilbertbouba92@email.com</span></div>
+                        <div><u>Phone</u> <span>+237 695 158 370</span></div>
+                        <div><u>Freelance</u> <span>Available</span></div>
+                    </article>
+                </section>
+                <section>
+                    PROFIL <br>
+                    je suis étudiant a l’univerisite de ngaoundere en faculté des sciences , niveau 3 informatique.
+                    J’ai une expérience en développement web et en système d’information. Je suis passionne par ces
+                    métiers. <br>
+                    ÉDUCATION <br>
+                    j’ai obtenu ma licence3en 2023-2024a l’univerisite de ngaoundere ;
+                    j’ai obtenu ma licence2 en 2022 -2023a l’univerisite de ngaoundere ;
+                    j’ai obtenu ma licence1 en 2021-2022 a l’univerisite de ngaoundere ;
+                    j’ai obtenu mon bac en 2020 -2021au lycée classic de moutourwa ; <br>
+                    LANGUE <br>
+                    je sais parle le français et je me débrouille en anglais. <br>
+                    LOISIR <br>
+                    - je joue au football, -j’aime dance, -j’aime
+                </section>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
